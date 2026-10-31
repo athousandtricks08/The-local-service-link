@@ -1,9 +1,1 @@
-{
-  "headers": {
-    "Cache-Control": "no-store, no-cache, must-revalidate"
-  },
-  "functions": {
-    "runtime": "nodejs"
-  },
-  "regions": ["sin1"]
-}
+
