@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 160 30% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 10%;
+    --primary: 160 84% 27%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 160 15% 94%;
+    --secondary-foreground: 160 30% 15%;
+    --muted: 160 10% 95%;
+    --muted-foreground: 160 10% 40%;
+    --accent: 45 93% 52%;
+    --accent-foreground: 30 60% 15%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 140 60% 40%;
+    --success-foreground: 0 0% 98%;
+    --warning: 35 95% 55%;
+    --warning-foreground: 30 60% 15%;
+    --border: 160 10% 88%;
+    --input: 160 10% 85%;
+    --ring: 160 84% 27%;
+    --chart-1: 160 84% 35%;
+    --chart-2: 45 93% 52%;
+    --chart-3: 200 70% 45%;
+    --chart-4: 140 60% 40%;
+    --chart-5: 25 80% 55%;
+    --radius: 0.6rem;
+  }
+  .dark {
+    --background: 160 20% 7%;
+    --foreground: 160 15% 95%;
+    --card: 160 20% 10%;
+    --card-foreground: 160 15% 95%;
+    --popover: 160 20% 10%;
+    --popover-foreground: 160 15% 95%;
+    --primary: 160 70% 45%;
+    --primary-foreground: 160 20% 8%;
+    --secondary: 160 15% 18%;
+    --secondary-foreground: 160 15% 95%;
+    --muted: 160 15% 16%;
+    --muted-foreground: 160 10% 60%;
+    --accent: 45 90% 50%;
+    --accent-foreground: 30 60% 12%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 140 55% 45%;
+    --success-foreground: 0 0% 98%;
+    --warning: 35 90% 55%;
+    --warning-foreground: 30 60% 12%;
+    --border: 160 15% 20%;
+    --input: 160 15% 22%;
+    --ring: 160 70% 45%;
+    --chart-1: 160 70% 45%;
+    --chart-2: 45 90% 50%;
+    --chart-3: 200 70% 50%;
+    --chart-4: 140 55% 45%;
+    --chart-5: 25 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
